@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#about {
+    color: #000000;  /* Dark gray text color */
+}
+
+#skills {
+    color: #100000;  /* Darker gray for contrast */
+}
+
+#projects {
+    color: #2b2b2b;  /* Darker shade for projects section */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #c3c39a;  /* Light cream background color */
+}
+
+
+header {
+    background: #675236;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: rgb(41, 22, 48);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.about img {
+    width: 170px;
+    height:170px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills .skill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill img {
+    width: 32px;
+    height: 32px;
+}
+
+
+.projects {
+    display: grid;                        /* Enables grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatically fills columns with a minimum width of 300px */
+    gap: 1.5rem;                          /* Adds space between the tiles */
+    margin-top: 2rem;                     /* Adds space at the top */
+}
+
+.project-card {
+    background: #f4f4f4;                  /* Light gray background for each project card */
+    padding: 1rem;                         /* Padding inside each project card */
+    border-radius: 8px;                    /* Rounded corners for the project cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the cards */
+    text-align: center;                    /* Centers the text inside each card */
+}
+
+.project-card img {
+    width: 100%;                           /* Ensures the project image takes up the full width of the card */
+    height: auto;                          /* Maintains aspect ratio of images */
+    border-radius: 8px;                    /* Rounds the corners of the images inside the project cards */
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
